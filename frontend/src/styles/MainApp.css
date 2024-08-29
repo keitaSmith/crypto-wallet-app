@@ -1,0 +1,225 @@
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.main-app-container {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+ 
+  font-family: Arial, sans-serif;
+}
+
+.user-info-panel {
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-right:20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.user-info-panel h2 {
+  margin-bottom: 10px;
+}
+
+.user-info-panel p {
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wallets-panel {
+  width: 65%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.wallets-panel h2 {
+  margin-bottom: 20px;
+}
+
+.wallets-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wallet-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.keys {
+  margin-top: 10px;
+}
+
+.key-display {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+.key-display label {
+  width: 150px; /* Fixed width to ensure alignment */
+  margin-right: 10px; /* Spacing between label and input */
+  /* font-weight: bold; */
+}
+
+.key-input {
+  width: calc(100% - 120px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copy-button {
+  background-color: #f8f9fa;
+  color: #000;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.copy-button:hover {
+  background-color: #e2e6ea;
+  border-color: #adb5bd;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-group .reveal-keys-button,
+.button-group .delete-button {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.button-group .reveal-keys-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-group .delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.button-group .reveal-keys-button:hover {
+  background-color: #0056b3;
+}
+
+.button-group .delete-button:hover {
+  background-color: #c82333;
+}
+
+.create-wallet {
+  margin-top: 20px;
+}
+
+.create-wallet input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-wallet-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-wallet-button:hover {
+  background-color: #0056b3;
+}
+
+
+.balance-info {
+  display: flex;
+  align-items: center;
+  margin:10px 0px;
+}
+
+.refresh-icon {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: green;
+  font-size: 16px;
+  padding: 0;
+}
+
+.refresh-icon.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.refresh-icon:disabled {
+  cursor: not-allowed;
+}
+.transaction-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-transaction-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-transaction-button:hover {
+  background-color: #218838;
+}
+
